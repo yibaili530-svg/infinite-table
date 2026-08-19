@@ -86,7 +86,7 @@ function PokerGame() {
   const [difficulty, setDifficulty] = useState(7);
   const [locale, setLocale] = useState<Locale>(() => {
     const saved = window.localStorage.getItem("flow-table-language");
-    return saved === "en" || saved === "zh" ? saved : "zh";
+    return saved === "en" || saved === "zh" ? saved : "en";
   });
   const [menuOpen, setMenuOpen] = useState(false);
   const t = copy[locale];
