@@ -8,7 +8,6 @@ function player(id: number, hand: Card[]): Player {
   return {
     id,
     name: ["Ethan", "Nova", "Victor"][id] ?? `P${id}`,
-    tag: "",
     avatar: String(id),
     stack: 0,
     bet: 0,

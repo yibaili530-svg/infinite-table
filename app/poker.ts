@@ -4,7 +4,6 @@ export type Phase = "preflop" | "flop" | "turn" | "river" | "showdown";
 export type Player = {
   id: number;
   name: string;
-  tag: string;
   avatar: string;
   stack: number;
   bet: number;
@@ -38,12 +37,12 @@ export const BIG_BLIND = 20;
 const SUITS: Suit[] = ["s", "h", "d", "c"];
 
 const templates = [
-  { name: "Ethan", tag: "紧凶", avatar: "E", aggression: 0.78, looseness: 0.28 },
-  { name: "Nova", tag: "数学派", avatar: "N", aggression: 0.58, looseness: 0.42 },
-  { name: "Victor", tag: "老练", avatar: "V", aggression: 0.49, looseness: 0.34 },
-  { name: "Mia", tag: "捕猎型", avatar: "M", aggression: 0.67, looseness: 0.52 },
-  { name: "Archer", tag: "松凶", avatar: "A", aggression: 0.88, looseness: 0.68 },
-  { name: "You", tag: "玩家", avatar: "Y", aggression: 0.5, looseness: 0.5 },
+  { name: "Ethan", avatar: "E", aggression: 0.78, looseness: 0.28 },
+  { name: "Nova", avatar: "N", aggression: 0.58, looseness: 0.42 },
+  { name: "Victor", avatar: "V", aggression: 0.49, looseness: 0.34 },
+  { name: "Mia", avatar: "M", aggression: 0.67, looseness: 0.52 },
+  { name: "Archer", avatar: "A", aggression: 0.88, looseness: 0.68 },
+  { name: "You", avatar: "Y", aggression: 0.5, looseness: 0.5 },
 ];
 
 const money = (n: number) => n.toLocaleString();
